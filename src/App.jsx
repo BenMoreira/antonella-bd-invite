@@ -1,10 +1,7 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import { motion } from 'framer-motion';
 import ConfettiExplosion from 'react-confetti-explosion';
 import antbd from './assets/antbd.png';
-import bgbd from './assets/bgbd.jpg';
 import './App.css'
 
 function App() {
@@ -32,7 +29,7 @@ function App() {
             <motion.div className='border-t-[150px] border-t-transparent border-b-[180px] border-b-transparent border-r-[180px] 
             border-r-pink-400 rounded-xl absolute' transition={{duration: 0.7}} animate={{y: 0, x: 180, opacity: flip ? 1 : 0}}></motion.div>
 
-            <motion.div className='w-[360px] h-[600px] bg-[url("src/assets/bgbd.jpg")] bg-cover rounded-xl'
+            <motion.div className='w-[360px] h-[600px] bg-[url("/bgbd.jpg")] bg-cover rounded-xl'
               transition={{duration: 2}}
               initial={{opacity: 0}}
               animate={{opacity: flip ? 0 : 1, y: flip ? 0 : [-135, -400, -135]}}
