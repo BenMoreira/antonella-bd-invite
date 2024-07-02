@@ -24,10 +24,12 @@ function App() {
             border-l-pink-400 rounded-xl absolute' transition={{duration: 0.7}} animate={{y: 0, opacity: flip ? 1 : 0}}></motion.div>
 
             <motion.div className='border-l-[180px] border-l-transparent border-r-[180px] border-r-transparent border-b-[180px] 
-            border-b-pink-400 rounded-xl absolute' transition={{duration: 0.7}} animate={{y: 150, x: 0, opacity: flip ? 1 : 0}}></motion.div>
+            border-b-pink-400 rounded-xl absolute' 
+            transition={{duration: 0.7}} initial={{y: 150}} animate={{y: 150, x: 0, opacity: flip ? 1 : 0}}></motion.div>
 
             <motion.div className='border-t-[150px] border-t-transparent border-b-[180px] border-b-transparent border-r-[180px] 
-            border-r-pink-400 rounded-xl absolute' transition={{duration: 0.7}} animate={{y: 0, x: 180, opacity: flip ? 1 : 0}}></motion.div>
+            border-r-pink-400 rounded-xl absolute' 
+            transition={{duration: 0.7}} initial={{x: 180}} animate={{y: 0, x: 180, opacity: flip ? 1 : 0}}></motion.div>
 
             <motion.div className='w-[360px] h-[600px] bg-[url("/bgbd.jpg")] bg-cover rounded-xl'
               transition={{duration: 2}}
