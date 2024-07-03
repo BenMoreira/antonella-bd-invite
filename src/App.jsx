@@ -16,23 +16,23 @@ function App() {
             <motion.div className='border-l-[180px] border-l-transparent border-r-[180px] border-r-transparent border-t-[150px] 
               border-t-black rounded-xl absolute'
                 
-              transition={{duration: 0.7}}
+              transition={{duration: 2}}
               animate={{rotateX: flip ? 0 : 180, y: flip ? 0 : -140, opacity: flip ? 1 : 0}}
             ></motion.div>
 
             <motion.div className='border-t-[150px] border-t-transparent border-b-[180px] border-b-transparent border-l-[180px] 
-            border-l-pink-400 rounded-xl absolute' transition={{duration: 0.7}} animate={{y: 0, opacity: flip ? 1 : 0}}></motion.div>
+            border-l-pink-400 rounded-xl absolute' transition={{duration: 2}} animate={{y: 0, opacity: flip ? 1 : 0}}></motion.div>
 
             <motion.div className='border-l-[180px] border-l-transparent border-r-[180px] border-r-transparent border-b-[180px] 
             border-b-pink-400 rounded-xl absolute' 
-            transition={{duration: 0.7}} initial={{y: 150}} animate={{y: 150, x: 0, opacity: flip ? 1 : 0}}></motion.div>
+            transition={{duration: 2}} initial={{y: 150}} animate={{y: 150, x: 0, opacity: flip ? 1 : 0}}></motion.div>
 
             <motion.div className='border-t-[150px] border-t-transparent border-b-[180px] border-b-transparent border-r-[180px] 
             border-r-pink-400 rounded-xl absolute' 
-            transition={{duration: 0.7}} initial={{x: 180}} animate={{y: 0, x: 180, opacity: flip ? 1 : 0}}></motion.div>
+            transition={{duration: 2}} initial={{x: 180}} animate={{y: 0, x: 180, opacity: flip ? 1 : 0}}></motion.div>
 
             <motion.div className='w-[360px] h-[600px] bg-[url("/antbackg2.jpg")] bg-cover rounded-xl'
-              transition={{duration: 2}}
+              transition={{delay:1, duration: 1.5}}
               initial={{opacity: 0}}
               animate={{opacity: flip ? 0 : 1, y: flip ? 0 : [-135, -400, -135]}}
             >
