@@ -31,7 +31,7 @@ function App() {
             border-r-pink-400 rounded-xl absolute' 
             transition={{duration: 0.7}} initial={{x: 180}} animate={{y: 0, x: 180, opacity: flip ? 1 : 0}}></motion.div>
 
-            <motion.div className='w-[360px] h-[600px] bg-[url("/bgbd.jpg")] bg-cover rounded-xl'
+            <motion.div className='w-[360px] h-[600px] bg-[url("/antbackg2.jpg")] bg-cover rounded-xl'
               transition={{duration: 2}}
               initial={{opacity: 0}}
               animate={{opacity: flip ? 0 : 1, y: flip ? 0 : [-135, -400, -135]}}
@@ -40,28 +40,28 @@ function App() {
               {isExploding && <ConfettiExplosion force={0.7} duration={5000} particleCount={300} colors={['#f9a8d4', '#3b82f6', '#d4af37']} />}
               </div>
 
-              <motion.div className='w-full flex flex-col gap-2 font-bold py-5 px-4'>
-                <motion.div className='text-pink-800 text-2xl py-4 text-center'>
+              <motion.div className='w-full h-full flex flex-col gap-2 font-bold py-5 px-4 bg-black border-black rounded-xl bg-opacity-40'>
+                <motion.div className='text-pink-500 text-2xl py-4 text-center'>
                   El 1er cumpleaños de
                 </motion.div>
 
-                <motion.div className='text-pink-900 text-3xl pb-4 text-center'>
+                <motion.div className='text-pink-500 text-3xl pb-4 text-center'>
                   Antonella Ulloa
                 </motion.div>
 
-                <motion.div className='text-pink-800 text-lg pb-4 text-right'>
+                <motion.div className='text-pink-500 text-lg pb-4 text-right'>
                   Ven a celebrar con ella
                 </motion.div>
 
-                <motion.div className='text-pink-800 text-lg'>
+                <motion.div className='text-pink-500 text-lg'>
                   El dia Sábado 27 de Julio
                 </motion.div>
 
-                <motion.div className='text-pink-800 text-lg pb-4'>
+                <motion.div className='text-pink-500 text-lg pb-4'>
                   a las 5 P.M.
                 </motion.div>
 
-                <motion.div className='text-pink-800 text-lg pb-4 text-right'>
+                <motion.div className='text-pink-500 text-lg pb-4 text-right'>
                   3896 Egypt Rd., Snellville, GA.
                 </motion.div>
 
