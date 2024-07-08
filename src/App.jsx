@@ -65,8 +65,12 @@ function App() {
                   3896 Egypt Rd., Snellville, GA.
                 </motion.div>
 
+                <motion.div className='text-pink-500 text-lg pb-4'>
+                  Ver mi lista en <a href='https://www.amazon.com/hz/wishlist/ls/ZKK3AYWJEJIC?ref_=wl_share' className='font-bold underline text-blue-600'>Amazon</a>
+                </motion.div>
+
                 <motion.div className='flex flex-col justify-center items-center pl-3'>
-                  <img src={antbd} className='w-[180px]' />
+                  <img src={antbd} className='w-[140px]' />
                 </motion.div>
               </motion.div>
             </motion.div>
